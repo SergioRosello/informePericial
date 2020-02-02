@@ -64,8 +64,9 @@ Esto quiere decir que podemos usar este harremienta para averiguar información 
 En este caso, hemos encontrado información que demuestra que efectivamente, existía un archivo de notas de los estudiantes. Este archivo se llamaba ``NOTAS POCIONES.ods'' y estaba guardado en la ruta ``C:$\backslash$Users$\backslash$Snape$\backslash$Documents$\backslash$NOTAS POCIONES.ods'' (Prueba 01)
 Este archivo ha sido añadido al escritorio el 23-10-2019 a las 16:07:38.
 
+Se puede ver en la prueba01-1.txt un registro que indica que se ha iniciado sesión desde la direccion IP 10.0.9.6, esta es, la dirección que obtiene el ordenador al conectarse a una red.
 
-El archivo ``Prueba02'' nos muestra información de la cuenta de Snape, la cual no necesitaba contraseña para iniciar sesión en ella. También no muestra que la última vez que se ha iniciado sesión es el 24-10-2019 a las 10:31:37.
+El archivo ``Prueba02'' nos muestra información de la cuenta de Snape. También no muestra que la última vez que se ha iniciado sesión es el 24-10-2019 a las 10:31:37.
 
 En el archivo ``prueba03'' podemos ver que el puerto configurado para el escritorio remoto de Windows es el 3389.
 
@@ -133,9 +134,11 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
 \begin{minipage}[t]{1\linewidth}
 \color{gray}
 \rule{\linewidth}{1pt}
-\ytl{23-10-2019 16:07:38}{Archivo notas pociones.ods añadido al escritorio}
+\ytl{23-10-2019 16:07:38}{Archivo notas pociones.ods añadido al escritorio como acceso rápido}
+\ytl{23-10-2019 16:33:28}{Inicio de escaneo de puertos desde la IP 10.0.9.6}
 \ytl{23-10-2019 16:39:52}{Inicio del ataque bruteforce desde 10.0.9.6 hacia 10.0.9.5}
 \ytl{23-10-2019 16:40:38}{Fin del ataque bruteforce desde 10.0.9.6 hacia 10.0.9.5}
+\ytl{23-10-2019 16:52:30}{Fin de escaneo de puertos desde la IP 10.0.9.6}
 \ytl{24-10-2019 09:31:31}{Se inicia el cliente de correos electrónicos Thunderbird}
 \ytl{24-10-2019 09:32:14}{Se descarga el archivo tarea.exe}
 \ytl{24-10-2019 09:33:14}{Archivo tarea.exe ha sido ejecutado}
@@ -148,7 +151,6 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
 \ytl{24-10-2019 10:12:54}{Se añade a un usuario a la lista de usuarios administradores \cite{4728}}
 \ytl{24-10-2019 10:12:55}{Se crea y configura la cuenta de Slytherin}
 \ytl{24-10-2019 10:15:21}{Se inicia el servicio de escritorio remoto con el mismo ProcessID y ThreadID que el proceso generado por namedpipe y se intenta configurar}
-\ytl{24-10-2019 10:18:35}{Se inicia el intento de conexión por RDP a la cuenta de Snape}
 \bigskip
 \end{minipage}%
 \end{table}
@@ -157,6 +159,7 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
 \centering
 \begin{minipage}[t]{1\linewidth}
 \color{gray}
+\ytl{24-10-2019 10:18:35}{Se inicia el intento de conexión por RDP a la cuenta de Snape}
 \ytl{24-10-2019 10:26:50}{Termina el intento de conexión por RDP a la cuenta de Snape}
 \ytl{24-10-2019 10:27:4}{Se inicia y cierra sesión a la cuenta de Slytherin}
 \ytl{24-10-2019 10:31:37}{Se coencta 10.0.9.6 por RDP a la cuenta de Snape}
@@ -176,6 +179,11 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
     \begin{itemize}
       \item{Prueba de la existencia de un archivo llamado ``NOTAS POCIONES.ods'' y de su reciente utilización}
       \item{Hash}: 3afda500c470b245f1e9984feb0f9f5133\\d22243373dd3bb18ae8d70e506b3fe
+    \end{itemize}}
+  \item{\textbf{Prueba01-1}: 
+    \begin{itemize}
+      \item{Prueba del escaneo de puertos con el programa nmap desde la dirección IP 10.0.9.6}
+      \item{Hash}: a516a7ab2c9c61d9a6c73ca1ad526db752\\2642c6a3e30c2ad28f52c5b8495ab9
     \end{itemize}}
   \item{\textbf{Prueba02}: 
     \begin{itemize}
