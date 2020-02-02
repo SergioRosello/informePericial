@@ -104,9 +104,30 @@ En la prueba12, se observa como el usuario conectado a la cuenta de snape está 
 Vemos en la prueba13 la verificación de que el sistema ha sido comprometido.
 En este momento, está ejecutando un módulo llamado namedpipe \cite{namedpipe} de un programa llamado meterpreter \cite{meterpreter}
 
+En la prueba14, vemos como se añade a un usuario a la lista de usuarios con privilegios global. \cite{4728}
+Además, vemos como se crea una nueva cuenta \cite{4720}, con el nombre ``Slytherin'', se habilita \cite{4722} y se le asigna una contraseña \cite{4724}.
+
+Vemos en el registro log2timeline generado que el proceso iniciado por el script namedpipe ha iniciado como un Servicio de Escritorio Remoto (prueba15) y ha generado nuevas llaves para conectarse y configurar el escritorio remoto de Windows.
+
+En la prueba16, se puede ver como se itenta acceder al sistema de Snape, desde la dirección 10.0.9.6, pero no lo consigue
+
+Vemos en la prueba17 como inicia y cierra sesión con la cuenta de Slytherin.
+
+En la prueba18, vmeos como inicia sesión en la cuenta de Snape y finalmente consigue conectarse mediante RDP al ordenador de Snape desde la dirección IP 10.0.9.6
+
+Una vez se ha conectado por RDP al sistema, se puede ver (prueba19) como el atacante ha abierto el navegador web Firefox.
+
+Se ve en la prueba20 como el atacante, ha presionado (No ha escrito, esto significa que la página web estaba guardada en el historial de firefox) sobre el enlace de moodle y ha navegado hasta el área personal del usuario conectado en esa cuenta.
+
+En la prueba21 podemos dar por finalizada la sesión de moodle, ya que el usuario llega a la pantalla de logout y no hay registros posteriores de interacción con la plataforma web moodle.
+
+En la prueba22 se puede ver como el usuario cierra sesión en Windows.
+
+En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistema desde la sesión RDP decide apagar el equipo.
+
 \subsubsection{cronograma}
 
-\begin{table}
+\begin{table}[H]
   \caption{Línea temporal de las Ocurrencias (Sin ajuste de zona horaria)}
 \centering
 \begin{minipage}[t]{1\linewidth}
@@ -123,14 +144,31 @@ En este momento, está ejecutando un módulo llamado namedpipe \cite{namedpipe} 
 \ytl{24-10-2019 10:06:40}{Se desancla el archivo NOTAS POCIONES.ods de los accesos rápidos}
 \ytl{24-10-2019 10:07:29}{El usurio accede a Moodle para empezar a poner notas a los alumnos}
 \ytl{24-10-2019 10:09:38}{El usurio acaba de poner notas a los alumnos}
-\ytl{24-10-2019 10:10:52}{Se ejecuta un programa que permite a atacantes controlar el sistema}
+\ytl{24-10-2019 10:10:52}{Se ejecuta namedpipe, un programa que permite a atacantes controlar el sistema}
+\ytl{24-10-2019 10:12:54}{Se añade a un usuario a la lista de usuarios administradores \cite{4728}}
+\ytl{24-10-2019 10:12:55}{Se crea y configura la cuenta de Slytherin}
+\ytl{24-10-2019 10:15:21}{Se inicia el servicio de escritorio remoto con el mismo ProcessID y ThreadID que el proceso generado por namedpipe y se intenta configurar}
+\ytl{24-10-2019 10:18:35}{Se inicia el intento de conexión por RDP a la cuenta de Snape}
+\bigskip
+\end{minipage}%
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{1\linewidth}
+\color{gray}
+\ytl{24-10-2019 10:26:50}{Termina el intento de conexión por RDP a la cuenta de Snape}
+\ytl{24-10-2019 10:27:4}{Se inicia y cierra sesión a la cuenta de Slytherin}
 \ytl{24-10-2019 10:31:37}{Se coencta 10.0.9.6 por RDP a la cuenta de Snape}
-\ytl{24-10-2019 10:31:38}{Se inicia el navegador Firefox}
+\ytl{24-10-2019 10:31:41}{Se inicia el navegador Firefox}
+\ytl{24-10-2019 10:31:50}{Se abre la página web del moodle además, se navega al área personal del usuario con la sesión iniciada anteriormente en la página y se procede a cambiar las notas. Sesión que sigue hasta el logout de la plataforma}
+\ytl{24-10-2019 10:46:33}{Se cierra sesión (logout) de la página web de moodle}
+\ytl{24-10-2019 10:46:38}{Se cierra sesión en Windows}
+\ytl{24-10-2019 10:47:53}{Se apaga el equipo desde la sesión restante RDP}
 \bigskip
 \rule{\linewidth}{1pt}%
 \end{minipage}%
 \end{table}
-
 \subsubsection{Referencias, documentos, procedimientos}
 
 \begin{itemize}
@@ -198,6 +236,56 @@ En este momento, está ejecutando un módulo llamado namedpipe \cite{namedpipe} 
     \begin{itemize}
       \item{Extracto del archivo generado por log2timeline.py en el que se ve como se ejecuta un comando que permite al atacante a conectarse al ordenador y escalar privilegios en el sistema}
       \item{Hash}: edffec0b32a6168c872a937f86cecbb72d\\bbd9b8de6a123636b8dd8b8aea7fd3
+    \end{itemize}}
+  \item{\textbf{Prueba14}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se añade a un usuario a la lista de usuarios globales con privilegios y se crea y configura un usuario nuevo: Slytherin}
+      \item{Hash}: 4e5c1f785cf2ec7a9f50a91462c51d3a9b\\479e29b820f425267be6fc0d2f4d05
+    \end{itemize}}
+  \item{\textbf{Prueba15}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se ha iniciado el Servicio de Escritorio Remoto con el mismo ProcessID y ThreadID que el programa ejecutado por namedpipe}
+      \item{Hash}: 05136ffb4fb6d9790cc2b1e15e83039f60\\c84cc30647143d6efd8845fdcdf4d1
+    \end{itemize}}
+  \item{\textbf{Prueba16}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se intenta acceder por RDP a la cuenta de Snape. El proceso muestra como se está canbiando de puerto constántemente, para adivinar cual es el puerto usado}
+      \item{Hash}: 52ae3dd9ac5d8335eb214d771d671c85d1\\780eca0b8f8df0bce7fe8e151235c7
+    \end{itemize}}
+  \item{\textbf{Prueba17}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se inicia y cierra sesión a la cuenta de Slytherin}
+      \item{Hash}: 557bd7d9a991b2debd874af164e73abed0\\03c2afccc10adb2b0ae534e41b4caa
+    \end{itemize}}
+  \item{\textbf{Prueba18}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se inicia sesión en la cuenta de Snape y se continúa intentando acceder por RDP. Además aparece la primera configuración de la cuenta}
+      \item{Hash}: f8da0fc88eab363fdc1b369d023f5619b\\186576334a36867af4906d093cdcd9c
+    \end{itemize}}
+  \item{\textbf{Prueba19}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se ejecuta el programa Firefox, localizado en los accesos directos del sistema.}
+      \item{Hash}: 5958ba5b7b71bb9ffa1303cc8c7a67725\\9a2afb2c5a3fd6a9b79b3ca99de25a8
+    \end{itemize}}
+  \item{\textbf{Prueba20}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como el atacante abre la página web de moodle sin escribirla y acaba entrando en la sección de área personal del moodle}
+      \item{Hash}: 96156df9576f07968e1490dee6a1df34c\\cbfd82dff39199de1d38ad446c1a1b4
+    \end{itemize}}
+  \item{\textbf{Prueba21}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como el atacante ha acabado de cambiar las notas y hace logout de la cuenta que estaba usando de moodle}
+      \item{Hash}: c8cbfa70eeff4033b9414f030920cf47f3\\fd9b642688fe7a7ea6f6228a46d267
+    \end{itemize}}
+  \item{\textbf{Prueba22}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como el atacante ha cerrado sesión en Windows}
+      \item{Hash}: 6eeb9c0378779f8de0f8ac687aa5dbf55c\\d862a2cf70840d17487209f0538ed7
+    \end{itemize}}
+  \item{\textbf{Prueba23}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como el atacante apaga el equipo}
+      \item{Hash}: 713fddbe879c7a9171707c0f875f5ab021\\e57308de13d4dac3c2a18525f6acec
     \end{itemize}}
 
 \end{itemize}
