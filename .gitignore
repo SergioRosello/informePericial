@@ -1,6 +1,11 @@
 # Created by https://www.gitignore.io/api/vim,latex
 # Edit at https://www.gitignore.io/?templates=vim,latex
 
+### Personal shit ###
+firma-1.png
+firma.pdf
+main.pdf
+
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
 *.aux

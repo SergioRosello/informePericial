@@ -1,0 +1,203 @@
+\subsection{Objeto}
+
+El presente documento ha solicitado por orden judicial.
+La finalidad del presente documento es obtener más información en relación a las alegaciones presentadas por el Profesor Snape.
+
+\subsection{Alcance}
+
+En este informe, se realizarán las acciones necesarias, de acorde con el artículo 475 de la Ley de Enjuiciamiento Criminal (LECrim) para responder, en las medidas de las capacidades del perito, las questiones planteadas por el juez asignado a este caso. 
+
+\begin{itemize}
+\item{¿Quién lo hizo?}
+\item{¿Qué ha sucedido?}
+\item{¿Dónde ha sucedido?}
+\item{¿Cuando ha sucedido?}
+\item{¿Como ha podido suceder?}
+\end{itemize}
+
+
+\subsection{Antecedentes}
+
+Howards, la gran escuela de magia y hechicería se pasa a la educación 3.0 y ha decidido usar
+Moddle como plataforma de aprendizaje Online. Esta plataforma está desplegada en la dirección
+10.0.9.4 con el nombre servidor.howards.edu. También hace las veces de servidor de correo
+electrónico.\par
+Esto ha generado sin fin de quebraderos de cabeza a todos los profesores, y especialmente a
+Severus Snape, profesor de Pociones. Según sus propias palabras: “ese sistema es una completa
+inutilidad que permite que los estudiantes cambien sus notas a su antojo”. El profesor asevera 
+que la nota del estudiante Lee Jordan no es la que le había asignado y que han desaparecido
+varios ficheros de su ordenador que contenían el listado de notas originales. Todo ello ha
+sucedido desde el pasado jueves 24 de octubre.\par
+Se han revisado los logs de la plataforma Moddle y en el registro de actividad esa nota fue
+cambiada por el usuario del profesor Snape desde la dirección IP de su ordenador (10.0.9.5).
+\gls{USB}
+
+\subsection{Consideraciones preliminares}
+
+Existen dos tipos generales de análisis de datos forenses.
+El análisis sobre \textbf{datos volátiles}, que nos proporcionará acceso a datos que usa el sistema operativo durante la ejecución del mismo.
+Estos datos generalmente están guardados en la Memoria RAM durante la ejecución. 
+
+El análisis sobre \textbf{datos no volátiles}, del cual podremos sacar información como registros, logs, ficheros de datos o ficheros de configuración.
+
+En este informe vamos a realizar una serie de pruebas sobre la imagen de disco que se nos ha proporcionado en la nube. (Análisis sobre datos no volátiles) 
+
+\subsection{Documentos de referencia}
+\printbibliography
+\subsection{Terminología y abreviaturas}
+\printglossaries
+\subsection{Análisis}
+\subsubsection{Datos de partida}
+
+Se ha proporcionado una copia del disco duro del profesor Snape, con identificador AMI ID: ami-099dc12a34e37d5dc 
+
+\subsubsection{Investigación realizada}
+
+Durante la investigación, se han realizado una serie de análisis sobre el disco proporcionado.
+A continuación, se procede a describir qué herramientas se han utilizado y los datos que nos han proporcionado.
+
+Se ha alanizado la papelera de reciclaje, para ver si había archivos que no se habían borrado, pero parece que todos los archivos contenidos en la papelera de reciclaja han sido borrados. La herramienta que se ha usado es rifiuti2 \cite{rifiuti2}
+
+Posteriormente, se usó regripper \cite{regripper} para extraer la ingormación contenida en el registro de Windows. 
+Windows, a diferencia de Linux, almacena todos los logs de forma centralizada.
+Esto quiere decir que podemos usar este harremienta para averiguar información como los eventos de seguridad del sistema, incluyendo las horas a las que se ha iniciado sesión en el sistema, la posición en el escritorio de los programas, la última y primera vez que se ha ejecutado un programa o los archivos recientes.
+En este caso, hemos encontrado información que demuestra que efectivamente, existía un archivo de notas de los estudiantes. Este archivo se llamaba ``NOTAS POCIONES.ods'' y estaba guardado en la ruta ``C:$\backslash$Users$\backslash$Snape$\backslash$Documents$\backslash$NOTAS POCIONES.ods'' (Prueba 01)
+Este archivo ha sido añadido al escritorio el 23-10-2019 a las 16:07:38.
+
+
+El archivo ``Prueba02'' nos muestra información de la cuenta de Snape, la cual no necesitaba contraseña para iniciar sesión en ella. También no muestra que la última vez que se ha iniciado sesión es el 24-10-2019 a las 10:31:37.
+
+En el archivo ``prueba03'' podemos ver que el puerto configurado para el escritorio remoto de Windows es el 3389.
+
+Se ha obtenido la línea temporal de las aplicaciones. Por brevedad, se incluirán solo los programas relevantes a la línea temporal de los hechos. El documento completo se puede ver en la prueba04.
+
+\begin{lstlisting}
+2019-10-24 09:31:31.312992, THUNDERBIRD.EXE-a0da674f, 4
+2019-10-24 09:33:14.270024, TAREA.EXE-c87edcc3, 1
+2019-10-24 10:07:11.926778, EXPLORER.EXE-a80e4f97, 6
+2019-10-24 10:07:44.733420, SCALC.EXE-45a807c5, 4
+2019-10-24 10:07:44.764668, SOFFICE.EXE-bb81bcca, 4
+2019-10-24 10:07:44.802756, SOFFICE.BIN-af0fd5a5, 4
+2019-10-24 10:31:38.106206, RDPCLIP.EXE-9067fa0e, 1
+2019-10-24 10:31:41.278082, FIREFOX.EXE-18acfcff, 64
+2019-10-24 10:46:36.771390, PINGSENDER.EXE-fa6def73, 23
+\end{lstlisting}
+
+Se puede ver, en los procesos indicados anteriormente, que el usuario registrado en el sistema a las 09:31:31 el día 24 de Octubre, estaba revisando los correos electrónicos.
+hecho que podemos corroborar, dado que tenenmos un registro parcial de esa sesión (Prueba05)
+La prueba05 tiene una larga extensión por lo que se ha generado un documento en el que se han añadido parte de los datos que corroboran que se había registrado una cuenta en el sistema y estaba intercambiando correos con Hermione y con rwesleay. (Prueba06)
+
+Se puede ver también, en la prueba07 que el archivo tarea.exe ha sido descargado en el directorio ``C:$\backslash$Users$\backslash$Snape$\backslash$Documents$\backslash$tarea.exe'' mientras se usaba el cliente de correo electrónico Thunderbird.
+
+Se puede ver además, que se ha ejecutado el archivo tarea.exe y que el usuario que lo ha ejecutado, ha verificado que era un programa en el que se podía confiar. (prueba08.txt)
+
+Luego, el usuario ha entrado en el portal moodle de Howards, ha iniciado sesión correctamente y ha hecho una serie de acciones sobre la plataforma. Esto se ve reflejado en la prueba09, un extracto del archivo generado por log2timeline.
+
+Siguiendo, podemos observar que el usurio ha iniciado sesión desde el propio ordenador a la cuenta de Snape.
+La prueba10 muestra un extracto del registro obtenido por log2timeline.
+
+La prueba11 es un extracto de log2timeline que describe como se desancla el archivo NOTAS POCIONES.ods de la lista de accesos rápidos de una aplicación.
+Posteriormente, las demás aplicaciones actualizan su registro de accesos directos \cite{813711}
+
+En la prueba12, se observa como el usuario conectado a la cuenta de snape está accediendo a Moodle, para añadir las notas a los alumnos del curso.
+
+Vemos en la prueba13 la verificación de que el sistema ha sido comprometido.
+En este momento, está ejecutando un módulo llamado namedpipe \cite{namedpipe} de un programa llamado meterpreter \cite{meterpreter}
+
+\subsubsection{cronograma}
+
+\begin{table}
+  \caption{Línea temporal de las Ocurrencias (Sin ajuste de zona horaria)}
+\centering
+\begin{minipage}[t]{1\linewidth}
+\color{gray}
+\rule{\linewidth}{1pt}
+\ytl{23-10-2019 16:07:38}{Archivo notas pociones.ods añadido al escritorio}
+\ytl{23-10-2019 16:39:52}{Inicio del ataque bruteforce desde 10.0.9.6 hacia 10.0.9.5}
+\ytl{23-10-2019 16:40:38}{Fin del ataque bruteforce desde 10.0.9.6 hacia 10.0.9.5}
+\ytl{24-10-2019 09:31:31}{Se inicia el cliente de correos electrónicos Thunderbird}
+\ytl{24-10-2019 09:32:14}{Se descarga el archivo tarea.exe}
+\ytl{24-10-2019 09:33:14}{Archivo tarea.exe ha sido ejecutado}
+\ytl{24-10-2019 09:35:38}{El usuario registrado en la cuenta de Snape, ha entrado en Moodle}
+\ytl{24-10-2019 10:06:12}{Se ha iniciado sesión físicamente en la cuenta de snape}
+\ytl{24-10-2019 10:06:40}{Se desancla el archivo NOTAS POCIONES.ods de los accesos rápidos}
+\ytl{24-10-2019 10:07:29}{El usurio accede a Moodle para empezar a poner notas a los alumnos}
+\ytl{24-10-2019 10:09:38}{El usurio acaba de poner notas a los alumnos}
+\ytl{24-10-2019 10:10:52}{Se ejecuta un programa que permite a atacantes controlar el sistema}
+\ytl{24-10-2019 10:31:37}{Se coencta 10.0.9.6 por RDP a la cuenta de Snape}
+\ytl{24-10-2019 10:31:38}{Se inicia el navegador Firefox}
+\bigskip
+\rule{\linewidth}{1pt}%
+\end{minipage}%
+\end{table}
+
+\subsubsection{Referencias, documentos, procedimientos}
+
+\begin{itemize}
+  \item{\textbf{Prueba01}: 
+    \begin{itemize}
+      \item{Prueba de la existencia de un archivo llamado ``NOTAS POCIONES.ods'' y de su reciente utilización}
+      \item{Hash}: 3afda500c470b245f1e9984feb0f9f5133\\d22243373dd3bb18ae8d70e506b3fe
+    \end{itemize}}
+  \item{\textbf{Prueba02}: 
+    \begin{itemize}
+      \item{Prueba de los ajustes de la cuenta de Snape}
+      \item{Hash}: 065b75b71434a9360318fd7f5af5a82104\\18c99da2b1f4ba2d6bacc235deae56
+    \end{itemize}}
+  \item{\textbf{Prueba03}: 
+    \begin{itemize}
+      \item{Prueba de la configuración de puerto del protocolo RDP de Windows}
+      \item{Hash}: 02859e64b9b51a88248548ca8a434e5f3f\\97a46ad9cd859d1af0f797b4d0a089
+    \end{itemize}}
+  \item{\textbf{Prueba04}: 
+    \begin{itemize}
+      \item{Documento contenedor del registro de programas iniciados en el sistema de los días 23 a 29 de octubre.}
+      \item{Hash}: 5ca694470541fdd7962927521a67f14994\\600f0d1545ccf736f7450208ed8afe
+    \end{itemize}}
+  \item{\textbf{Prueba05}: 
+    \begin{itemize}
+      \item{Archivo íntegro exportado por bulk\_extractor conteniendo información de los correos}
+      \item{Hash}: ab48fce96cf1efd3db8e2a7f3f0fec1748\\ba101074f33939188a7b91340b47d3
+    \end{itemize}}
+  \item{\textbf{Prueba06}: 
+    \begin{itemize}
+      \item{Extracto de la prueba 05}
+      \item{Hash}: 9b85b5741479ab4d6d50e2f82add0b8e93\\e1b94c85317c9f380e7338f414b625
+    \end{itemize}}
+  \item{\textbf{Prueba07}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py que verifica la descarga del archivo tarea.exe}
+      \item{Hash}: 3e1424451e034f62c2e2e0ab38990e7993\\ab20aa7bc99f40fd2f33592fbc226f
+    \end{itemize}}
+  \item{\textbf{Prueba08}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py que verifica la ejecución de tarea.exe}
+      \item{Hash}: c56935d094fadff780ad711ddc502ae9a3\\78920d083ca1e65532bad9576abcf1
+    \end{itemize}}
+  \item{\textbf{Prueba09}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py que verifica que el usuario con sesión iniciada en el sistema ha entrado en el portal web de moodle y se ha autenticado correctamente}
+      \item{Hash}: bc27dad7e3ee4d2aed7eaba3967149b668\\2dda37ea4728bf312a61b5d1fb0bbd
+    \end{itemize}}
+  \item{\textbf{Prueba10}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py que verifica que se ha iniciado sesión en la cuenta de Snape desde el ordenador}
+      \item{Hash}: cbba75ca1fcdc785af77528f72b2caee86\\c6151d07c493b56689cb0f831c4c57
+    \end{itemize}}
+  \item{\textbf{Prueba11}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se actualiza el registro del documento NOTAS POCIONES.ods}
+      \item{Hash}: 35a11fa3d9a9b83262e41b0be1070c0783\\e17097f955f5e365f998388c740200
+    \end{itemize}}
+  \item{\textbf{Prueba12}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como el usuario está añadiendo las notas al Moodle}
+      \item{Hash}: d2e1e4475188f5484d9e2851fe2ffd1cc9\\973bf65fe079f339574a89dd1a12f0
+    \end{itemize}}
+  \item{\textbf{Prueba13}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se ejecuta un comando que permite al atacante a conectarse al ordenador y escalar privilegios en el sistema}
+      \item{Hash}: edffec0b32a6168c872a937f86cecbb72d\\bbd9b8de6a123636b8dd8b8aea7fd3
+    \end{itemize}}
+
+\end{itemize}

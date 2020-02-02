@@ -1,0 +1,166 @@
+samparse v.20160203
+(SAM) Parse SAM file for user & group mbrshp info
+
+
+User Information
+-------------------------
+Username        : Administrador [500]
+Full Name       : 
+User Comment    : Cuenta integrada para la administración del equipo o dominio
+Account Type    : Default Admin User
+Name            :  
+Last Login Date : Tue Jul 14 05:08:59 2009 Z
+Pwd Reset Date  : Tue Jul 14 05:13:36 2009 Z
+Pwd Fail Date   : Never
+Login Count     : 1
+  --> Normal user account
+  --> Password does not expire
+  --> Account Disabled
+
+Username        : Invitado [501]
+Full Name       : 
+User Comment    : Cuenta integrada para el acceso como invitado al equipo o dominio
+Account Type    : Default Guest Acct
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : Never
+Pwd Fail Date   : Never
+Login Count     : 0
+  --> Normal user account
+  --> Password not required
+  --> Password does not expire
+  --> Account Disabled
+
+Username        : Snape [1001]
+Full Name       : 
+User Comment    : 
+Account Type    : Default Admin User
+Name            :  
+Password Hint   : Siempre
+Last Login Date : Thu Oct 24 10:31:37 2019 Z
+Pwd Reset Date  : Mon Oct 21 10:28:34 2019 Z
+Pwd Fail Date   : Tue Oct 29 11:39:58 2019 Z
+Login Count     : 7
+  --> Normal user account
+  --> Password not required
+  --> Password does not expire
+
+Username        : HomeGroupUser$ [1002]
+Full Name       : HomeGroupUser$
+User Comment    : Cuenta integrada para el acceso de grupo en el hogar al equipo
+Account Type    : Custom Limited Acct
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : Mon Oct 21 10:28:35 2019 Z
+Pwd Fail Date   : Never
+Login Count     : 0
+  --> Normal user account
+  --> Password does not expire
+
+Username        : slytherin [1003]
+Full Name       : 
+User Comment    : 
+Account Type    : Custom Limited Acct
+Name            :  
+Last Login Date : Thu Oct 24 10:27:04 2019 Z
+Pwd Reset Date  : Thu Oct 24 10:12:55 2019 Z
+Pwd Fail Date   : Never
+Login Count     : 0
+  --> Normal user account
+
+-------------------------
+Group Membership Information
+-------------------------
+Group Name    : Usuarios avanzados [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los usuarios avanzados se incluyen para la compatibilidad con versiones anteriores y poseen derechos administrativos limitados
+Users         : None
+
+Group Name    : Operadores de copia de seguridad [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los operadores de copia de seguridad pueden invalidar restricciones de seguridad con el único propósito de hacer copias de seguridad o restaurar archivos.
+Users         : None
+
+Group Name    : Usuarios [3]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los usuarios no pueden hacer cambios accidentales o intencionados en el sistema y pueden ejecutar la mayoría de aplicaciones
+Users :
+  S-1-5-4
+  S-1-5-21-1889767047-1812109830-4081843715-1003
+  S-1-5-11
+
+Group Name    : Usuarios de escritorio remoto [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : A los miembros de este grupo se les concede el derecho de iniciar sesión remotamente
+Users         : None
+
+Group Name    : Duplicadores [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Pueden replicar archivos en un dominio
+Users         : None
+
+Group Name    : Invitados [1]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : De forma predeterminada, los invitados tienen el mismo acceso que los miembros del grupo Usuarios, excepto la cuenta de invitado que tiene más restricciones
+Users :
+  S-1-5-21-1889767047-1812109830-4081843715-501
+
+Group Name    : IIS_IUSRS [1]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Grupo integrado usado por Internet Information Services.
+Users :
+  S-1-5-17
+
+Group Name    : Administradores [2]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los administradores tienen acceso completo y sin restricciones al equipo o dominio
+Users :
+  S-1-5-21-1889767047-1812109830-4081843715-1001
+  S-1-5-21-1889767047-1812109830-4081843715-500
+
+Group Name    : Operadores criptográficos [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los miembros tienen autorización para realizar operaciones criptográficas.
+Users         : None
+
+Group Name    : Usuarios del monitor de sistema [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los miembros de este grupo tienen acceso a los datos del contador de rendimiento de forma local y remota
+Users         : None
+
+Group Name    : Lectores del registro de eventos [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los miembros de este grupo pueden leer registros de eventos del equipo local.
+Users         : None
+
+Group Name    : Operadores de configuración de red [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los miembros en este equipo pueden tener algunos privilegios administrativos para administrar la configuración de las características de la red
+Users         : None
+
+Group Name    : Usuarios COM distribuidos [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los miembros pueden iniciar, activar y usar objetos de COM distribuido en este equipo.
+Users         : None
+
+Group Name    : Usuarios del registro de rendimiento [0]
+LastWrite     : Thu Jan  1 00:00:00 1970 Z
+Group Comment : Los miembros de este grupo pueden programar contadores de registro y rendimiento, habilitar proveedores de seguimiento y recopilar seguimientos de eventos localmente y a través del acceso remoto a este equipo
+Users         : None
+
+Analysis Tips:
+ - For well-known SIDs, see http://support.microsoft.com/kb/243330
+     - S-1-5-4  = Interactive
+     - S-1-5-11 = Authenticated Users
+ - Correlate the user SIDs to the output of the ProfileList plugin
+
+----------------------------------------
+1247548416|SAM||Administrador|Password Reset Date
+1247548139|SAM||Administrador|Last Login (1)
+1571653714|SAM||Snape|Password Reset Date
+1572349198|SAM||Snape|Password Failure Date
+1571913097|SAM||Snape|Last Login (7)
+1571653715|SAM||HomeGroupUser$|Password Reset Date
+1571911975|SAM||slytherin|Password Reset Date
+1571912824|SAM||slytherin|Last Login (0)
+----------------------------------------

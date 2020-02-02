@@ -4,10 +4,34 @@
 \usepackage[utf8]{inputenc} 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyvrb}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage[export]{adjustbox}
+\usepackage[nonumberlist, acronym]{glossaries}
+\newcommand\ytl[2]{
+  \parbox[b]{10em}{\hfill{\color{cyan}\bfseries\sffamily #1}}\makebox[4pt][c]{$\bullet$}\vrule\quad \parbox[c]{8.5cm}{\vspace{7pt}\color{red!40!black!80}\raggedright\sffamily #2.\\[7pt]}\\[-3pt]}
 \addbibresource{bibliography.bib}
 
-\title{{\Huge Caso Hoguards}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+
+\makeglossaries
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Caso Hoguards}
+\rhead{SR0001}
+\rfoot{\thepage/\pageref{LastPage}}
+
+\title{{\Huge Análisis forense en relación con el caso Hoguards}}
 \date{}
+
+\input{glossary.tex}
 
 \begin{document}
 
@@ -15,9 +39,22 @@
 \maketitle
   \begin{itemize}
     \item[] \textbf{\textit{Identificador:}} SR0001
+    \item[] \textbf{\textit{Nº Expediente:}} 1034923SE
     \item[] \textbf{\textit{Perito:}} Sergio Roselló Morell
+    \item[] \textbf{\textit{Titulación Perito:}} Grado en Ingeniería en desarrollo de contenidos digitales
+    \item[] \textbf{\textit{Colegio/Entidad:}} Colegio de peritos Informáticos
+    \item[] \textbf{\textit{DNI:}} 53665746D
+    \item[] \textbf{\textit{Domicilio profesionál:}} Calle Arcipreste de Hita, 23, Madrid, Madrid
+    \item[] \textbf{\textit{Teléfono:}} (+34)665367467
+    \item[] \textbf{\textit{Correo electrónico:}} sergio@peritosinformaticos.com
     \item[] \textbf{\textit{Solicitante:}} Profesor Snape
+    \item[] \textbf{\textit{DNI solicitante:}} 55327687A
     \item[] \textbf{\textit{Fecha emisión informe:}} Sat 02 Nov 2019 08:42:12 PM CET
+    \item[] \textbf{\textit{Competencias y capacidades del perito:}} Estudios en Master Ciberseguridad
+    \item[] \textbf{\textit{Firma Perito:}} 
+
+      \includegraphics[height=4cm, right]{firma-1.png}
+
   \end{itemize}
 \end{titlepage}
 
@@ -25,30 +62,19 @@
 En el presente documento se hará un estudio de la reciente intrusuíón al ordenador del profesor Snape, perteneciente a Hoguards. Se analizarán: Quién, qué ha sucedido, donde ha sucedido, cuando ha sucedido y como ha podido suceder y se presentará en forma de informe pericial.
 \end{abstract}
 
-\clearpage
 
+\section{Abstenciones o Recusaciones }
+\input{sections/imparcialidad.tex}
+\section{Juramento, promesa y sanciones penales}
+\input{sections/jpysp.tex}
+\clearpage
 \tableofcontents
-
 \clearpage
-
-\section{Introducción}
-\input{sections/introduccion}
-\section{Objetivos}
-\input{sections/objetivos}
-\section{Alcance}
-\input{sections/alcance}
-\section{Antecedentes}
-\input{sections/antecedentes}
-\section{Fuentes de información}
-\input{sections/fuentesInformacion}
-\section{Limitación}
-\input{sections/limitacion}
-\section{Resolución}
-\input{sections/resolucion}
+\section{informe}
+\input{sections/informe.tex}
 \section{Conclusión}
 \input{sections/conclusion}
 \section{Anexos}
 \input{sections/anexos}
 
-\printbibliography
 \end{document}
