@@ -1,0 +1,1217 @@
+sudo apt-get update && sudo apt-get upgrade
+clear
+sudo apt-get upgrade 
+sudo apt-get autoclean
+sudo apt-get autoremove
+clear
+exit
+sudo reboot 
+sudo shutdown -h now
+sudo shutdown -h now
+exit
+sudo shutdown -h now
+df
+cd /dev/xvda1
+sudo su
+df
+lsblk
+ls
+sudo su
+lsblk
+mkdir severusSnape-instance Documents/
+cd DOc
+cd Documents/
+ls
+tree
+ls -R -d
+ls -R
+clear
+mkdir LaboratorioForense
+ls
+cd LaboratorioForense/
+ls
+mkdir InstanciaSnape
+sudo mount /dev/xvdf InstanciaSnape/
+sudo mount /dev/xvdf2 InstanciaSnape/
+ls
+cd InstanciaSnape/
+ls
+la
+ls ls
+ls -l
+sudo umount .
+..
+dc ..
+cd ..
+sudo umount ./InstanciaSnape 
+ls
+sudo mount -o ro /dev/xvdf2 ./InstanciaSnape/
+cd InstanciaSnape/
+ls
+ls -l
+cd 714f8f7f6f74fda07f02/
+ls
+la
+ls -la
+cd ..
+ls
+cd Recovery/78069c96-f3f3-11e9-aece-faef1475bdb8/
+ls
+cd ..
+cd $Recycle.Bin
+cd "\$Recycle.Bin"/
+ls
+cd S-1-5-21-1889767047-1812109830-4081843715-1001/
+ls
+ls -la
+pwd
+cd ..
+l
+cd severusSnape-instance/
+ls
+ls -la
+cd ..
+ls
+rm -rf severusSnape-instance/
+ls
+cd Documents/
+ls
+cd winMount/
+ls
+cd ..
+ls
+cd winMount/
+ls -la
+cd ..
+rm rf winMount/
+rm -rf winMount/
+ls
+cd la
+cd LaboratorioForense/
+ls
+mkdir programas
+cd programas/
+ls
+git clone git@github.com:abelcheung/rifiuti2.git
+git clone https://github.com/abelcheung/rifiuti2.git
+ls
+cd rifiuti2/
+ls
+./configure && make check && make install
+autoreconf -f -i -v
+sudo apt install autoconf
+autoreconf -f -i -v
+sudo apt install autopoint
+autoreconf -f -i -v
+./configure
+make check
+make install
+ls
+./install-sh 
+vim Makefile.am
+sudo apt install glib 
+sudo apt install pkg-config
+make --version
+sudo apt install gettext
+nvim configure.ac
+vim configure.ac
+autoreconf
+autoreconf -f -i -v
+./configure
+sudo apt install glib2
+cd ..
+wget -c http://ftp.acc.umu.se/pub/GNOME/sources/glib/2.36/glib-2.36.3.tar.xz
+ls
+tar -xJvf glib-2.36.3.tar.xz 
+cd glib-2.36.3/
+ls
+sudo apt install libffi-dev
+./configure
+automake --version
+autoconf --version
+m4 --version
+perl --version
+make
+automake --version
+sudo apt install automake=1.13
+sudo apt install automake-1.13
+rifiuti2
+sudo apt install rifiuti2
+cd ..
+ls
+rm -rf glib-2.36.3*
+ls
+cd LaboratorioForense/
+ls
+cd InstanciaSnape/"InstanciaSnape/\$Recycle.Bin"/
+ls
+cd InstanciaSnape/
+ls
+cd "\$Recycle.Bin"/ 
+ls
+..
+cd ...
+cd ..
+ls
+cd ..
+ls
+mkdir Informes
+cd Informes/
+ls
+rifiuti-vista ./../InstanciaSnape/\$Recycle.Bin"/
+"
+rifiuti-vista /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin"/
+"
+rifiuti-vista /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin
+rifiuti-vista /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin/
+rifiuti-vista /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin/S-1-5-21-1889767047-1812109830-4081843715-1001/
+rifiuti /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin/S-1-5-21-1889767047-1812109830-4081843715-1001/
+rifiuti2 /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin/S-1-5-21-1889767047-1812109830-4081843715-1001/
+rifiuti2 /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin/
+man rifiuti2
+rifiuti-vista /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin/S-1-5-21-1889767047-1812109830-4081843715-1001/
+rifiuti-vista /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin/
+rifiuti-vista /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/\$Recycle.Bin/S-1-5-21-1889767047-1812109830-4081843715-1001/
+scp
+cd ..
+cd InstanciaSnape/
+ls
+ls -la
+regripper
+cd ..
+cd programas/
+ls
+rm -rf rifiuti2/
+mkdir regripper
+cd regripper/
+wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/regripper/rrv2.8.zip > rrv2.8.zip
+l
+wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/regripper/rrv2.8.zip
+ls
+rm -*
+rm -rf .*
+ls
+rm -rf rrv2.8.zip rrv2.8.zip.1 rrv2.8.zip.2
+ls
+wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/regripper/rrv2.8.zip
+ls
+unzip rrv2.8.zip 
+ls
+cat faq 
+ls
+cd ..
+ls
+cd ..
+ls
+cd Desktop/
+sls
+ls
+cd cases
+ls
+cd ..
+ls
+cd /usr/local/src/regripper/
+ls
+rip .pl
+perl rip.pl 
+scp regripper.pdf sergio@192.168.0.23:/home/sergio/Documents/master/MasterCiberseguridad/2019-2020/AnálisisForense/casoPractico/PruebasPráctica
+pwd
+ls
+perl rip.pl -l -c
+cd /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/
+cd Users/Snape/
+ls -la
+pwd
+perl /usr/local/src/regripper/rip.pl -p cached -r NTUSER.DAT
+cd /usr/local/src/regripper/plugins/
+ls
+perl /usr/local/src/regripper/rip.pl -p cached.pl -r NTUSER.DAT
+perl /usr/local/src/regripper/rip.pl -p /usr/local/src/regripper/plugins/cached.pl -r NTUSER.DAT
+cd /usr/local/src/regripper/
+perl rip.pl -p cached.pl -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Users/Snape/NTUSER.DAT
+perl rip.pl -p cached -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Users/Snape/NTUSER.DAT
+ls
+cat sample.txt 
+vim sample.txt 
+ls
+vim README.md 
+perl rip.pl 
+perl rip.pl -p shellbangs -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Users/Snape/AppData/Local/Microsoft/Windows/UsrClass.dat
+perl rip.pl -p shellbags -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Users/Snape/AppData/Local/Microsoft/Windows/UsrClass.dat
+ls
+vim rip.pl 
+ls
+perl rip.pl -v
+wget https://drive.google.com/open?id=0BwsuIHubBoklNDZYNGpkeThXR2M
+ls
+cd plugins/
+ls
+cd ..
+vim all
+vim plugins/all
+cd plugins/
+ls
+man grep
+ls | grep -v *.pl
+ls > grep -v *.pl
+ls
+grep -v *.pl < ls
+ls | grep banner
+ls | grep -v .pl
+cd ..
+perl rip.pl 
+perl rip.pl -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Windows/System32/config/SYSTEM -f system
+perl rip.pl -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Windows/System32/config/SYSTEM -f system > /home/sansforensics/Documents/LaboratorioForense/Informes/regripper-system
+ls | grep -v .pl
+ls ./plugins/ | grep -v .pl
+perl rip.pl -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Windows/System32/config/SAM -f sam > /home/sansforensics/Documents/LaboratorioForense/Informes/regripper-sam
+perl rip.pl -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Documents\ and\ Settings/Snape/NTUSER.DAT -f ntuser > /home/sansforensics/Documents/LaboratorioForense/Informes/regripper-ntuser
+ls ./plugins/ | grep -v .pl
+perl rip.pl -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Windows/System32/config/SECURITY -f security > /home/sansforensics/Documents/LaboratorioForense/Informes/regripper-security
+perl rip.pl -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Windows/System32/config/SOFTWARE -f software > /home/sansforensics/Documents/LaboratorioForense/Informes/regripper-software
+ls ./plugins/ | grep -v .pl
+perl rip.pl -r /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Users/Snape/AppData/Local/Microsoft/Windows/UsrClass.dat -f usrclass > /home/sansforensics/Documents/LaboratorioForense/Informes/regripper-usrclass
+cd /home/sansforensics/Documents/LaboratorioForense/Informes/
+ls
+vim regripper-ntuser 
+ls
+cd
+cd Documents/LaboratorioForense/InstanciaSnape/Users/Snape/Documents/
+ls
+ls -la
+file tarea.exe 
+pwd
+cd ..
+ls
+cd Users/Snape/Documents/
+ls
+strigs tarea.exe
+binutils-strings
+sudo apt install binutils
+strings tarea.exe 
+strings tarea.exe > textoDelBinario
+strings tarea.exe > ../../../../Informes/stringsdetarea
+1
+2
+cd ~/Documents/LaboratorioForense/Informes/
+ls
+vim stringsdetarea 
+ls
+vim notas
+cd ..
+ls
+cd InstanciaSnape/Users/Snape/Documents/
+ls
+pwd
+ls -la
+cd ..
+ls
+cd Desktop/
+ls
+ls -la
+cd Apuntes\ de\ Pociones/
+ls
+cd ..
+ls
+ls -la
+cd Pociones\ IV/
+ls -la
+cat pg12238.txt 
+cd ..
+ls
+cd ..
+ls -la
+cd Mis\ documentos
+ls
+cd Mi\ música
+ls
+..
+cd ..
+ls -la
+cd Reciente
+ls
+ls -la
+file NOTAS\ POCIONES.lnk 
+string NOTAS\ POCIONES.lnk 
+strings NOTAS\ POCIONES.lnk 
+autopsy 
+man autopsy
+ls
+cd ..
+ls
+cd Informes/
+ls
+pwd
+exit
+prefetch.py 
+whereis prefetch.py
+strings /usr/local/bin/prefetch.py 
+strings /usr/local/bin/prefetch.py > vim
+ls
+rm vim
+vim
+ls
+cd Documents/LaboratorioForense/
+ls
+cd InstanciaSnape/
+ls
+cd Users/Snape/AppData/Local
+ls
+l
+ls -l
+cd Thunderbird/Profiles/
+ls
+cd 1wcf98mw.default-release/
+ls
+ls -la
+ls -r
+ls -ra
+cd startupCache/
+ls
+..
+cd ..
+ls
+autopsy
+log2timeline.py 
+cd ..
+ls
+cd ..
+ld
+ls
+log2timeline.py --info
+log2timeline.py --status_view window Informes/log2timelineInforme.plaso InstanciaSnape/
+log2timeline.py --status_view window --no_dependencies_check Informes/log2timelineInforme.plaso InstanciaSnape/
+ls
+cd Informes/
+ls
+vim log2timelineInforme.plaso 
+psort.py -o l2tcsv -z Europe/Madrid -w log2timelineInforme.csv log2timelineInforme.plaso 
+ls
+autopsy &
+ps
+sudo autopsy
+autopsy 0.0.0.0
+sudo autopsy 0.0.0.0
+autopsy ::/0 
+autopsy 0.0.0.0
+sudo autopsy 0.0.0.0
+sudo vim /etc/sysctl.conf 
+sudo iptables -S
+sudo iptables -L -n -v
+sudo autopsy 0.0.0.0
+ps
+jobs
+sudo autopsy 0.0.0.0
+sudo kill autopsy
+top
+sudo killall autopsy
+sudo autopsy 0.0.0.0
+autopsy -h
+sudo autopsy 5.225.77.132
+sudo autopsy -C 5.225.77.132
+autopsy -h
+sudo autopsy 87.125.151.196
+exit
+cd /var/lib/autopsy/
+ls
+nvim autopsy.log 
+vim autopsy.log 
+man tee
+man less
+vim autopsy.log 
+ls -la
+cat .9999.cookie 
+sudo cat .9999.cookie 
+ls -la
+cd ..
+cd
+ls
+cd Documents/LaboratorioForense/InstanciaSnape/
+ls
+ls -la
+sudo mount -o ro /dev/xvdf
+sudo mount -o ro /dev/xvdf2
+lsblk
+sudo mount -o ro /dev/xvdf2 .
+ls
+cd ..
+ls
+cd InstanciaSnape/
+ls
+pwd
+ls
+cd ..
+ls
+dd ls
+ls
+dd if=InstanciaSnape/ of=Informes/snapeImage.dd bs=128K conv=noerror,sync
+lsblk
+sudo umount /dev/xvdf2 
+lsblk
+dd if=/dev/xvdf2 of=Informes/snapeImage.dd bs=128K conv=noerror,sync
+sudo dd if=/dev/xvdf2 of=Informes/snapeImage.dd bs=128K conv=noerror,sync
+cd Informes/
+ls
+pwd
+exit
+apt get install
+ls
+cd Documents/LaboratorioForense/
+cd InstanciaSnape/
+ls
+..
+cd ..
+sudo mount -o ro /dev/xvdf2 InstanciaSnape/
+ls InstanciaSnape/
+cd ..
+ls
+sudo umount /dev/xvdf2
+ls
+ls LaboratorioForense/InstanciaSnape/
+cd LaboratorioForense/
+ls
+sudo mount -o ro /dev/xvdf2 InstanciaSnape/
+vol.py profiles
+cd Informes/
+ls
+l
+ls -la
+vol.py imageinfo -f snapeImage.dd 
+cd ..
+ls
+cd Informes/
+ls
+mkdir regripper
+mv reg* regripper
+ls
+mkdir log2timeline
+mv log2timeline* log2timeline/
+ls
+head stringsdetarea 
+cat notas 
+mkdir tsk_recover
+tsk_recover /dev/xvdf2 tsk_recover/
+sudo umount ../InstanciaSnape 
+tsk_recover /dev/xvdf2 tsk_recover/
+sudo tsk_recover /dev/xvdf2 tsk_recover/
+cd tsk_recover/
+ls
+cd "\$OrphanFiles"/
+ls
+cd ..
+cd ProgramData/Microsoft/Search/Data/Applications/Windows/
+ls
+cd .....
+cd ..
+ls
+ls -lR
+cd ..
+ls
+vim notas 
+mkdir foremost
+foremost -dv -o ./foremost/ -c /etc/foremost.conf /dev/xvdf2
+jobs
+ps
+top
+clear
+cd Documents/LaboratorioForense/Informes/
+cd log2timeline/
+ls
+cd ..
+ls
+cd tsk_recover/
+ls
+cd ..
+ls
+ls InstanciaSnape/
+cd Informes/foremost/
+ls
+lr -lR
+ls -lR
+cd ..
+sudo mount -o ro /dev/xvdf2 InstanciaSnape/
+cd InstanciaSnape/
+ls
+ls -lR 714f8f7f6f74fda07f02/
+ls -l
+cd Program\ Files\ \(x86\)/Mozilla\ Firefox/browser/META-INF/
+ls
+cd ..
+ls
+cd ..
+ls
+pwd
+vim *.log
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd Informes/
+ls
+cd regripper/
+ls
+vim regR*
+vim regripper-*
+..
+cd ..
+ls
+cd ..
+ls
+cd programas/
+ls
+cd ..
+ls
+cd Documents/LaboratorioForense/Informes/scalpel/output/
+ls
+cd pdf-16-0/
+ls
+cd ..
+cd pdf-17-0/
+ls
+cd
+cd Documents/LaboratorioForense/
+ls
+cd InstanciaSnape/
+ls
+ls -la
+cd Users/Snape/AppData/Roaming/Mozilla/Firefox/Profiles/
+ls
+ls -la
+cd etqbtwe9.default/
+ls
+ls -la
+cat times.json 
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd  ..
+lss
+ls
+cd Windows/Prefetch/
+ls
+pwd
+prefetch.py -c -d ("$pwd") > ~/Documents/LaboratorioForense/Informes/prefetch
+prefetch.py -c -d "$pwd" > ~/Documents/LaboratorioForense/Informes/prefetch
+ech "$pwd"
+mkdir ~/Documents/LaboratorioForense/Informes/prefetch
+cat ~/Documents/LaboratorioForense/Informes/prefetch 
+rm ~/Documents/LaboratorioForense/Informes/prefetch 
+prefetch.py -c -d /home/sansforensics/Documents/LaboratorioForense/InstanciaSnape/Windows/Prefetch/ > ~/Documents/LaboratorioForense/Informes/prefetch
+cat ~/Documents/LaboratorioForense/Informes/prefetch 
+vim ~/Documents/LaboratorioForense/Informes/prefetch 
+ls
+cd
+cd Documents/LaboratorioForense/Informes/
+ls
+sha256sum prefetch 
+cd Documents/LaboratorioForense/
+ls
+cd Informes/
+ls
+vol.py -f ../InstanciaSnape/hiberfil.sys --profile=Windows7SP1x64 hibinfo
+ls
+vol.py -f snapeImage.dd imageinfo
+ls
+rifiuti --help
+rifiuti-vista --help
+mkdir rifiuti-vista
+rifiuti-vista "../InstanciaSnape/\$Recycle.Bin"/ -o rifiuti-vista/
+touch rifiuti-vista/log
+rifiuti-vista "../InstanciaSnape/\$Recycle.Bin"/ -o rifiuti-vista/log 
+rifiuti2 "../InstanciaSnape/\$Recycle.Bin"/ -o rifiuti-vista/log 
+rifiuti-vista ../InstanciaSnape/\$Recycle.Bin/S-1-5-21-1889767047-1812109830-4081843715-1001/ -o rifiuti-vista/log 
+cd rifiuti-vista/
+cat log 
+..
+cd ..
+ls
+scalpel --help
+scalpel
+man scalpel 
+ls
+mkdir scalpel
+touch scalpel/scalpel.conf
+vim scalpel/scalpel.conf 
+cd scalpel/
+ls
+scalpel /dev/xvdf2 -o output
+vim scalpel.conf 
+scalpel /dev/xvdf2 -o output
+ls
+ls output/
+rm output/audit.txt 
+scalpel /dev/xvdf2 -o output
+scalpel -h
+scalpel /dev/xvdf2 -o output -c scalpel.conf 
+vim scalpel.conf 
+scalpel /dev/xvdf2 -o output -c scalpel.conf 
+rm output/audit.txt 
+scalpel /dev/xvdf2 -o output -c scalpel.conf 
+sudo umount ./../../InstanciaSnape 
+rm output/audit.txt 
+scalpel /dev/xvdf2 -o output -c scalpel.conf 
+sudo scalpel /dev/xvdf2 -o output -c scalpel.conf 
+rm output/audit.txt 
+sudo scalpel /dev/xvdf2 -o output -c scalpel.conf 
+lsblk
+lsblk 
+fdisk -h
+fdisk -l
+sudo ""
+sudo sudo "" 
+sudo fdisk -l
+df
+du
+cd output
+ls
+cat audit.txt
+ls
+cd pdf-16-0
+ls
+strings 00026288.pdf
+ls
+strings 00026289.pdf | vim 
+vim 
+cd ..
+ls
+cd ..
+ls
+for dir in output; do (rm -rf "$dir"); done
+sudo for dir in output; do (rm -rf "$dir"); done
+for dir in output; do (sudo rm -rf "$dir"); done
+ls output
+ls
+cat "Esto no ha servido de nada, me ha llenado el disco, sin la posibilidad de ver los archivos que había. De todas frmnas, no estaba el .ods de las notas de los alumnos" > notas
+touch notas
+cat "Esto no ha servido de nada, me ha llenado el disco, sin la posibilidad de ver los archivos que había. De todas frmnas, no estaba el .ods de las notas de los alumnos" > notas
+ls -la
+cat notas 
+echo "Esto no ha servido de nada, me ha llenado el disco, sin la posibilidad de ver los archivos que había. De todas frmnas, no estaba el .ods de las notas de los alumnos" > notas
+sudo echo "Esto no ha servido de nada, me ha llenado el disco, sin la posibilidad de ver los archivos que había. De todas frmnas, no estaba el .ods de las notas de los alumnos" > notas
+vim notas 
+ls
+cat notas 
+cd ..
+ls
+sudo mount -o ro /dev/xvdf2 InstanciaSnape/
+sudo dd if=InstanciaSnape/Users/Snape/Documents/ of=documentsSnape.raw bs=64K conv=noerror,sync
+ls
+rm documentsSnape.raw 
+ls
+ls Informes/
+bulk_extractor 
+mkdir bulk_extractor
+bulk_extractor -R InstanciaSnape/Users/Snape/Documents/ -o Informes/bulk_extractor
+rm -rf bulk_extractor/
+cd Informes/bulk_extractor/
+ls
+cat sqlite_carved.txt 
+cat *
+cd ...
+cd ..
+ld
+ls
+rm -rf Informes/bulk_extractor/
+bulk_extractor imagefile Informes/snapeImage.dd -o Informes/bulk_extractor
+bulk_extractor -h
+bulk_extractor Informes/snapeImage.dd -o Informes/bulk_extractor
+cd Informes/bulk_extractor/
+ls
+cat email_histogram.txt 
+cat email_histogram.txt | grep hogwards
+cat email_histogram.txt | grep servidor
+cd Documents/LaboratorioForense/Informes/
+ls
+cd regripper/
+ls
+vim regRipper-ProgramExecution 
+vim  regripper-system 
+ls
+cd Documents/
+ls
+cd LaboratorioForense/
+ls
+cd Informes/
+ls
+cd bulk_extractor/
+ls
+cat aes_keys.txt 
+cat alerts.txt 
+cat ccn_histogram.txt 
+cat domain_histogram.txt 
+head domain_histogram.txt 
+head -n 20 domain_histogram.txt 
+cat domain_histogram.txt  | grep 10.0
+cat domain.txt 
+cat domain.txt | grep 1.0.9. > dominiosInteresantes.log
+nvim dominiosInteresantes.log 
+vim dominiosInteresantes.log 
+cat domain.txt | grep 1.0.9.
+cat domain.txt | grep "1.0.9."
+head domain.txt 
+ls
+cat email.txt 
+cat email_domain_histogram.txt 
+cat email_histogram.txt 
+cat email_histogram.txt | grep servidor
+ls
+head ether.txt 
+head ether_histogram.txt 
+head -n 20  ether_histogram.txt 
+head -n 20 ether_histogram.txt 
+cat -n 20 ether_histogram.txt 
+ls
+head find_histogram.txt 
+head find.txt 
+head httplogs.txt 
+head httplogs.txt | grep 2019-10-23 
+cat httplogs.txt | grep 2019-10-23 
+cat httplogs.txt | grep 2019-10-24 
+cat httplogs.txt | grep -o "10.0.9.6" 
+cat httplogs.txt | grep -w "10.0.9.6" 
+cat httplogs.txt | grep -w "10.0.9.6" | wc -l
+cat httplogs.txt | grep -w "10.0.9.6" | grep -w "200 - OK" | wc -l
+cat httplogs.txt | grep -w "10.0.9.6" | grep -w "200 - OK"
+cat httplogs.txt | grep -w "10.0.9.6" | grep -w "200"
+cat httplogs.txt | grep -w "10.0.9.6" | grep -w "200 "
+ls
+head httplogs.txt 
+cat ip.txt 
+cat ip_histogram.txt 
+cat jpeg_carved.txt 
+cat json.txt 
+vim json.txt 
+vim ../notas 
+ls
+cat kml.txt 
+cat packets.pcap 
+ls
+wget https://raw.githubusercontent.com/charlescva/common/master/pcap-analyzer.sh
+ls
+chmod +x pcap-analyzer.sh 
+./pcap-analyzer.sh 
+./pcap-analyzer.sh packets.pcap 
+pwd
+ls
+cat pii_teamviewer.txt 
+cat pii.txt 
+cat rar.txt 
+cat report.xml 
+cat rfc822.txt 
+cat rfc822.txt | grep EMAIL
+cat rfc822.txt | grep servidor
+vim rfc822.txt 
+ls
+cat sqlite_carved.txt 
+cd sqlite_carved/
+ls
+cd 000/
+ls
+cat 10486673980.sqlite3 
+ls
+pwd
+cat 10486673980.sqlite3  | strings > 10486673980
+cat 10486673980
+cat 10486673980 | grep moz
+ls
+cat 10486673980.sqlite3 | grep -A 3 -B 3 moz > all
+CAT ALL
+cat all
+cat 10486673980.sqlite3 | strings | grep -A 3 -B 3 moz > all
+strings 10486673980.sqlite3 | grep -A 3 -B 3 moz > all
+rm all
+strings 10486673980.sqlite3 | grep -A 3 -B 3 moz > all
+cat all
+strings 10486673980.sqlite3 | grep -A 3 -B 3 moz_ > all
+rm all
+strings 10486673980.sqlite3 | grep -A 3 -B 3 moz_ > all
+cat all
+rm all
+strings 43683840.sqlite3 | grep -A 3 -B 3 moz_hosts > all
+cat all
+rm all
+strings 43683840.sqlite3 | grep -l -A 3 -B 3 moz_ > all
+cat all
+rm all
+strings * | grep -l -A 3 -B 3 moz_ > all
+cat all
+rm all
+strings * | grep -l -A 3 -B 3 moz_
+strings * | grep -A 3 -B 3 moz_
+ls
+rm 10486673980
+strings *.sqlite3 | grep -A 3 -B 3 moz_
+strings *.sqlite3 | grep -l -A 3 -B 3 moz_ 
+strings *.sqlite3 | grep -A 3 -B 3 moz_ -l 
+man grep
+strings *.sqlite3 | grep -l moz_ 
+strings *.sqlite3 | grep moz_ 
+strings *.sqlite3 | grep -l moz_ 
+ls *.sqlite3
+for file in $(ls *.sqlite3) ; do strings $file | grep -l >> archivosInteresantes ; done
+for file in $(ls *.sqlite3) ; do strings $file | grep -l moz_ >> archivosInteresantes ; done
+cat archivosInteresantes 
+for file in $(ls *.sqlite3) ; do strings $file > $file.strings ; done
+ls
+grep -f *.sqlite3.strings -l moz_
+grep -f ./*.sqlite3.strings -l moz_
+grep -f ./*.strings -l moz_
+grep -f *.strings -l moz_
+grep --include=*.strings -l moz_
+grep -ri 'moz_' .
+grep -ri 'moz_' . | sort -u 
+grep -ri 'moz_' . 
+grep -ril 'moz_' . 
+grep -rl 'moz_' . 
+cat 2411659264.sqlite3 | grep 'moz_'
+for file in $(ls *.strings) ; do grep -rl 'moz_' $file >> matches ; done
+cat matches 
+cat matches | wc -l
+ls
+ls | wc -l
+ls
+rm archivosInteresantes 
+cat matches | awk '{ Print $1 }'
+cat matches | awk '{ Print $2 }'
+cat matches 
+cat matches | awk '{ print $1 }'
+cat matches | awk -F'.' '{ print $1 }'
+cat matches | awk -F'.' '{ print $1$2 }'
+cat matches | awk -F'.' '{ print $1.$2 }'
+cat matches | awk -F'.' '{ print $1'.'$2 }'
+cat matches | awk -F'.' '{ print $1 . $2 }'
+cat matches | awk -F'.' '{ print $1 '.' $2 }'
+cat matches | awk -F'.' '{ print $1  $2 }'
+cat matches | awk -F'.' '{ print $1"."$2 }'
+cat matches | awk -F'.' '{ print $1"."$2 }' > archivosQueContienenMOZ
+ls
+rm matches 
+ls
+cd ..
+ls
+cat telephone_histogram.txt 
+cat unrar_carved.txt 
+cat unzip_carved.txt 
+cat url_facebook-address.txt 
+cat url_facebook-id.txt 
+cat url_histogram.txt 
+head url_histogram.txt 
+head url_searches.txt 
+head -n 20 url_searches.txt 
+head -n 20 url_services.txt 
+head -n 20 url.txt 
+head -n 20 vcard.txt 
+head -n 20 windirs.txt 
+vim windirs.txt 
+ls
+vim winpe.txt 
+ls
+head -n 20 zip.txt 
+cd ..
+ls
+cd ..
+ld
+cd ..
+ls
+cd LaboratorioForense/InstanciaSnape/
+ls
+cd Windows/System32/
+ls
+ls -d
+man ls
+ls -d
+ls -r -d
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd Informes/
+ls
+ls -r
+ls -R
+cd regripper/
+ls
+vim regripper-security 
+ls
+cd ..
+ls
+cd ..
+ls
+cd InstanciaSnape/Windows/System32/winevt/Logs/
+ls
+pip --version
+cd
+pip install python-extx
+pip install --upgrade pip
+sudo pip install --upgrade pip
+pip install python-extx
+python -v
+python --version
+apt install python3
+sudo apt install python3
+pip3 install python-evtx
+sudo apt install python3-pip
+sudo pip3 install python-evtx
+pip3 -v
+sudo apt install python3-pip
+sudo apt install --force-yes python3-pip
+sudo apt install
+sudo apt upgrade
+sudo apt-get update
+sudo apt upgrade
+cd Documents/LaboratorioForense/Informes/
+mkdir python-extx
+python ../programas/python-evtx/scripts/evtx_dump.py ../InstanciaSnape/Windows/System32/winevt/Logs/Security.evtx > python-extx/security
+vim python-extx/security 
+vim notas 
+ls
+cd ..
+ls
+ls -l Informes/
+du -h Informes/
+cd Informes/
+ls
+cd bulk_extractor/
+ls
+vim httplogs.txt 
+ls
+vim json.txt 
+ls
+cd ..
+ls
+mkdir volatility
+cd volatility/
+ls
+vol.py -f ../snapeImage.dd lsadump
+vol.py -f ../snapeImage.dd imageinfo
+ls
+cd ..
+ls
+cd regripper/
+ls
+vim regRipper-SnapeAccountDetails 
+ls
+vim ../notas 
+ls
+ftkparse.pl -h
+ftkparse.pl 
+ftkparse.pl --help
+cd ..
+cd InstanciaSnape/Users/Snape/
+ls
+file NTUSER.DAT
+cd
+cd Documents/LaboratorioForense/Informes/regripper/
+vim regripper-ntuser 
+vim ../notas 
+ls
+vim regripper-usrclass 
+cd ..
+cd Informes/
+ls
+cd bulk_extractor/
+ls
+cd ..
+ls
+vim notas 
+exit
+cd Documents/LaboratorioForense/programas/
+ls
+git clone https://github.com/guelfoweb/peframe.git
+ls
+cd peframe/
+ls
+sudo bash install.sh 
+pefname
+ls
+cd ..
+ls
+rm Informes/peframe 
+cd Documents/LaboratorioForense/Informes/
+ls
+cd bulk_extractor/
+ls
+vim ccn_histogram.txt 
+cat rfc822.txt | grep ' 10:' > rfcTimeline 
+sort -u rfcTimeline > rfcTimelineSorted
+vim rfcTimelineSorted 
+ls
+vim url_searches.txt 
+ls
+vim windirs.txt 
+ls
+cd ..
+ls
+cd ..
+ls
+cd InstanciaSnape/Users/Snape/Documents/
+l
+strings tarea.exe > tarea.exe.strings
+strings tarea.exe > ../../../../Informes/tarea.exe.strings
+cd
+cd Documents/LaboratorioForense/Informes/
+ls
+vim tarea.exe.strings 
+ls
+cd bulk_extractor/
+ls
+vim url.txt 
+ls
+cd ..
+cd InstanciaSnape/Users/Snape/Documents/
+ls
+peframe --auto tarea.exe > ../../../../Informes/peframe
+peframe tarea.exe 
+peframe -i tarea.exe 
+cd
+cd Documents/LaboratorioForense/Informes/
+ls
+ls -l
+cd rifiuti-vista/
+ls
+vim log 
+rifiuti-vista ../../InstanciaSnape/\$Recycle.Bin/S-1-5-21-1889767047-1812109830-4081843715-1001/
+rifiuti-vista ../../InstanciaSnape/\$Recycle.Bin/
+rifiuti-vista ../../InstanciaSnape/
+ls -la ../../../LaboratorioForense/InstanciaSnape/\$Recycle.Bin/
+ls -la ../../../LaboratorioForense/InstanciaSnape/\$Recycle.Bin/S-1-5-21-1889767047-1812109830-4081843715-1001/
+cd ..
+ls
+cd regripper/
+ls
+exit
+vim .bash_history 
+exit
+tmux
+exit
+cd Documents/LaboratorioForense/Informes/
+ls
+sha256sum prueba01.txt prueba02.txt 
+sha256sum prueba03.txt 
+sha256sum prueba02.txt 
+mv prueba2.txt prueba02.txt 
+sha256sum prueba02.txt 
+sha256sum prueba03.txt 
+vim .bash_history 
+cd Documents/LaboratorioForense/InstanciaSnape/Users/Snape/AppData/Roaming/Microsoft/Windows/
+l
+ls -la
+ls
+cd Recent/AutomaticDestinations/
+ls
+strings 1b4dd67f29cb1962.automaticDestinations-ms | head
+strings 1b4dd67f29cb1962.automaticDestinations-ms
+strings 7e4dca80246863e3.automaticDestinations-ms 
+strings 9b9cdc69c1c24e2b.automaticDestinations-ms 
+cd ..
+ls
+strings  NOTAS\ POCIONES.lnk 
+strings  NOTAS\ POCIONES.lnk > ~/Documents/LaboratorioForense/Informes/prueba01.txt
+sha256sum ~/Documents/LaboratorioForense/Informes/prueba01.txt 
+ls
+cd ..
+ls
+cd Start\ Menu/
+ls
+cd Programs/Administrative\ Tools/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd
+more .bash_history 
+vim .bash_history 
+tmux
+sudo apt install tmux
+tmux 
+ls
+cd Documents/LaboratorioForense/Informes/
+cd regripper/
+ls
+vim regRipper-itempos 
+ls
+cd ..
+ls
+vim .bash_history
+cd Documents/LaboratorioForense/Informes/
+ls
+cat prefetch 
+ls
+cp prefetch ~/Documents/LaboratorioForense/Informes/prueba04.txt
+cd bulk_extractor/
+ls
+vim rfc822.txt 
+ls
+cp rfc822.txt ~/Documents/LaboratorioForense/Informes/prueba05.txt
+cd ..
+ls
+cd bulk_extractor/
+ls
+vim rfcTimelineSorted 
+ls
+cd ..
+ls
+cd log2timeline/
+ls
+vim log2timelineInforme.csv 
+ls
+ls -la
+exit
+cd Documents/LaboratorioForense/InstanciaSnape/Users/Snape/Documents/
+ls
+strings tarea.exe | grep fzfkeq
+strings tarea.exe | grep meterpreter
+strings tarea.exe | grep 30000
+cd ..
+cd InstanciaSnape/
+ls
+cd ..
+cd Informes/
+ls
+cd log2timeline/
+ls
+cat log2timelineInforme.csv | grep 'ProcessID="480"' > pid480
+vim pid480 
+rm pid480 
+ls
+cd Documents/LaboratorioForense/InstanciaSnape/Users/Snape/Documents/
+ls
+strings tarea.exe > ~/Documents/LaboratorioForense/Informes/tarea.exe.strings
+strings tarea.exe > ~/Documents/LaboratorioForense/Informes/tarea.exe.string
+cd ~/Documents/LaboratorioForense/Informes/
+ls
+rm tarea.exe.strings  
+vim tarea.exe.string 
+exit
+cd Documents/LaboratorioForense/Informes/
+ls
+cd pruebas/
+ls
+vim prueba14.txt
+ls
+vim prueba01-1.txt 
+exit
+vim .bash_history 
+cd Documents/LaboratorioForense/Informes/log2timeline/
+ls
+vim log2timeline-filtered.csv 
+cd ..
+ls
+cd foremost/
+ls
+vim audit.txt 
+ls
+cd ..
+ls
+vim notas
+cd log2timeline/
+vim log2timeline-filtered.csv 
+exit

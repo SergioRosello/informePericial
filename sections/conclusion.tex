@@ -1,0 +1,33 @@
+Tras el análisis de la imagen del sistema proporcionado, y teniendo en cuenta las exigencias legislativas, el perito concluye que hay evidencias de un ataque por parte de la persona detrás de la dirección \gls{IP} 10.0.9.6 puesto que existe tráfico generado con herramientas de enumeración de puertos y servicios como \gls{nmap}. 
+
+Además, hay evidencias de una comunicación via correo electrónico con dos cuentas:
+\begin{itemize}
+\item{\textbf{rwesleay@}: cuyo ``Subject'' es: ``Re: Tarea pociones'' en ambos registros}
+\item{\textbf{Hermione G}: cuyo ``Subject'' es: ``Re: Dudas del trabajo'' en un registro y ``Re: Tarea'' en el segundo registro}
+\end{itemize}
+
+La línea temporal de eventos, sugiere que el usuario llamado Snape en el equipo spape-pc ha descargado y ejecutado un programa llamado TAREA.EXE, que al ejecutarse, le ha pedido permisos de administración del sistema y el usuario ha concedido mientras estaba usando el cliente de correo electrónico Thunderbird.
+
+Este archivo ejecutable malicioso es el que ha permitido al atacante entrar en el sistema mediante la técnica de namedpipe.
+
+El perito no ha encontrado evidencias de que se haya entrado en la cuenta de Snape desde el ordenador del atacante hasta las 10:10:52, en este momento, el archivo de las notas de las pociones ``NOTAS POCIONES.ods'' ya se ha borrado del sistema. Tampoco se han encontrado evidencias de que dicho archivo se haya borrado del sistema.
+
+Siguiendo la línea temporal, vemos que el usuario atacante entra en la cuenta de Snape, crea una cuenta nueva: ``Slytherin'' y la configura, entra en ella para posteriormente salir y volver a entrar en la de Snape.
+
+Más adelante, a las 10:31:50 (UTC+0) se conecta por \gls{RDP} desde su IP ``10.0.9.6'' a la cuenta del Profesor Snape.
+
+En este momento, abre Firefox, el navegador que usa el usuario Snape y entra al portal Moodle, donde están almacenadas las notas de los alumnos. 
+
+Dado que el Profesor Snape usa ese navegador a diario, tiene las cookies configuradas para recordar su nombre de usuario (Con privilegios suficientes para añadir notas, cambiar notas y borrar notas).
+
+El atacante procede a cambiar las notas y posteriormente cierra sesión en la plataforma Moodle y apaga el equipo.
+
+\subsubsection{En resumen:}
+
+\begin{itemize}
+\item{\textbf{¿Quién lo hizo?}: El usuario manejando el sistema detrás de la IP 10.0.9.6}
+\item{\textbf{¿Qué ha sucedido?}: El usuario Snape ha descargado un programa malicioso que ha permitido al atacante obtener permisos de administración en el sistema y configurar una sesión RDP para cambiar las notas en moodle.}
+\item{\textbf{¿Dónde ha sucedido?}: En la cuenta del Profesor Snape, en el equipo snape-pc con IP 10.0.9.5}
+\item{\textbf{¿Cuando ha sucedido?}: El atacante ha empezado a cambiar las notas a partir de las 10:31:41 (UTC+0)}
+\item{\textbf{¿Como ha podido suceder?}: Ha podido cambiar las notas en Moodle porque la cuenta de Snape tenía las cookies guardadas}
+\end{itemize}

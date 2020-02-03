@@ -5,7 +5,7 @@ La finalidad del presente documento es obtener más información en relación a 
 
 \subsection{Alcance}
 
-En este informe, se realizarán las acciones necesarias, de acorde con el artículo 475 de la Ley de Enjuiciamiento Criminal (LECrim) para responder, en las medidas de las capacidades del perito, las questiones planteadas por el juez asignado a este caso. 
+En este informe, se realizarán las acciones necesarias, de acorde con el artículo 475 de la Ley de Enjuiciamiento Criminal (LECrim) para responder, en las medidas de las capacidades del perito, las quistiones planteadas por el juez asignado a este caso. 
 
 \begin{itemize}
 \item{¿Quién lo hizo?}
@@ -29,8 +29,7 @@ que la nota del estudiante Lee Jordan no es la que le había asignado y que han 
 varios ficheros de su ordenador que contenían el listado de notas originales. Todo ello ha
 sucedido desde el pasado jueves 24 de octubre.\par
 Se han revisado los logs de la plataforma Moddle y en el registro de actividad esa nota fue
-cambiada por el usuario del profesor Snape desde la dirección IP de su ordenador (10.0.9.5).
-\gls{USB}
+cambiada por el usuario del profesor Snape desde la dirección \gls{IP} de su ordenador (10.0.9.5).
 
 \subsection{Consideraciones preliminares}
 
@@ -56,15 +55,19 @@ Se ha proporcionado una copia del disco duro del profesor Snape, con identificad
 Durante la investigación, se han realizado una serie de análisis sobre el disco proporcionado.
 A continuación, se procede a describir qué herramientas se han utilizado y los datos que nos han proporcionado.
 
-Se ha alanizado la papelera de reciclaje, para ver si había archivos que no se habían borrado, pero parece que todos los archivos contenidos en la papelera de reciclaja han sido borrados. La herramienta que se ha usado es rifiuti2 \cite{rifiuti2}
+Se ha analizado la papelera de reciclaje, para ver si había archivos que no se habían borrado, pero parece que todos los archivos contenidos en la papelera de reciclaje han sido borrados. La herramienta que se ha usado es rifiuti2 \cite{rifiuti2}
 
-Posteriormente, se usó regripper \cite{regripper} para extraer la ingormación contenida en el registro de Windows. 
+Posteriormente, se usó regripper \cite{regripper} para extraer la información contenida en el registro de Windows. 
 Windows, a diferencia de Linux, almacena todos los logs de forma centralizada.
-Esto quiere decir que podemos usar este harremienta para averiguar información como los eventos de seguridad del sistema, incluyendo las horas a las que se ha iniciado sesión en el sistema, la posición en el escritorio de los programas, la última y primera vez que se ha ejecutado un programa o los archivos recientes.
+Esto quiere decir que podemos usar este herramienta para averiguar información como los eventos de seguridad del sistema, incluyendo las horas a las que se ha iniciado sesión en el sistema, la posición en el escritorio de los programas, la última y primera vez que se ha ejecutado un programa o los archivos recientes.
 En este caso, hemos encontrado información que demuestra que efectivamente, existía un archivo de notas de los estudiantes. Este archivo se llamaba ``NOTAS POCIONES.ods'' y estaba guardado en la ruta ``C:$\backslash$Users$\backslash$Snape$\backslash$Documents$\backslash$NOTAS POCIONES.ods'' (Prueba 01)
 Este archivo ha sido añadido al escritorio el 23-10-2019 a las 16:07:38.
 
-Se puede ver en la prueba01-1.txt un registro que indica que se ha iniciado sesión desde la direccion IP 10.0.9.6, esta es, la dirección que obtiene el ordenador al conectarse a una red.
+Se puede ver en la prueba01-1.txt un registro que indica que se ha iniciado una enumeración de puertos desde el atacante (10.0.9.6) hacia el ordenador del Profesor Snape.
+
+Se puede ver en el archivo prueba01-2.txt el registro de peticiones web generadas desde el ordenador del atacante (10.0.9.6) hacia el ordenador del Profesor Snape (10.0.9.5).
+En la prueba01-3.txt también se puede ver el registro de peticiones del atacante hacia la víctima.
+Esta vez, con el cuerpo de las peticiones.
 
 El archivo ``Prueba02'' nos muestra información de la cuenta de Snape. También no muestra que la última vez que se ha iniciado sesión es el 24-10-2019 a las 10:31:37.
 
@@ -84,8 +87,11 @@ Se ha obtenido la línea temporal de las aplicaciones. Por brevedad, se incluir�
 2019-10-24 10:46:36.771390, PINGSENDER.EXE-fa6def73, 23
 \end{lstlisting}
 
+Este listado de aplicaciones iniciadas puede sugerir que el usuario de la cuenta snape en el ordenador spape-pc abrió el correo electrónico, (Thunderbird), descargó el archivo tarea.exe, abre el programa de edición de documentos (soffice.exe) y abre el navegador de internet. Pero un análisis más en detalle (Descrito a continuación) nos sugiere que en realidad, estas acciones han sido hechas por dos usuarios completamente distintos.
+
 Se puede ver, en los procesos indicados anteriormente, que el usuario registrado en el sistema a las 09:31:31 el día 24 de Octubre, estaba revisando los correos electrónicos.
-hecho que podemos corroborar, dado que tenenmos un registro parcial de esa sesión (Prueba05)
+hecho que podemos corroborar, dado que tenemos un registro parcial de esa sesión (Prueba05).
+
 La prueba05 tiene una larga extensión por lo que se ha generado un documento en el que se han añadido parte de los datos que corroboran que se había registrado una cuenta en el sistema y estaba intercambiando correos con Hermione y con rwesleay. (Prueba06)
 
 Se puede ver también, en la prueba07 que el archivo tarea.exe ha sido descargado en el directorio ``C:$\backslash$Users$\backslash$Snape$\backslash$Documents$\backslash$tarea.exe'' mientras se usaba el cliente de correo electrónico Thunderbird.
@@ -94,13 +100,26 @@ Se puede ver además, que se ha ejecutado el archivo tarea.exe y que el usuario 
 
 Luego, el usuario ha entrado en el portal moodle de Howards, ha iniciado sesión correctamente y ha hecho una serie de acciones sobre la plataforma. Esto se ve reflejado en la prueba09, un extracto del archivo generado por log2timeline.
 
-Siguiendo, podemos observar que el usurio ha iniciado sesión desde el propio ordenador a la cuenta de Snape.
+Siguiendo, podemos observar que el usuario ha iniciado sesión desde el propio ordenador a la cuenta de Snape.
 La prueba10 muestra un extracto del registro obtenido por log2timeline.
 
+En este momento, el perito no ha encontrado ninguna evidencia de que un atacante haya entrado al sistema o haya borrado el archivo NOTAS POCIONES.ods.
+
+Hay que tener en cuenta que el programa malicioso si que ha sido ejecutado anteriormente a la eliminación del archivo, así que existe la posibilidad de que haya sido borrado por el atacante y no haya quedado registrada la acción.
+
+Si que se puede confirmar que se ha iniciado sesión en la cuenta del Profesor Snape desde el ordenador físico antes de la eliminación del documento.
+
 La prueba11 es un extracto de log2timeline que describe como se desancla el archivo NOTAS POCIONES.ods de la lista de accesos rápidos de una aplicación.
+
+Nótese que esto no quiere decir que haya sido eliminado, simplemente indica que se ha desanclado de la lista de accesos rápidos del sistema. 
+Aunque el documento no se encuentra en el sistema, no se ha encontrado (Muy al asombro del perito) ningún registro el el sistema de que se haya eliminado el archivo del sistema. Aún así, el archivo si que se ha eliminado.
+
 Posteriormente, las demás aplicaciones actualizan su registro de accesos directos \cite{813711}
 
 En la prueba12, se observa como el usuario conectado a la cuenta de snape está accediendo a Moodle, para añadir las notas a los alumnos del curso.
+
+Hasta este momento, no tenemos ninguna prueba que sugiera que el ordenador del Profesor Snape haya sido comprometido por nadie.
+Simplemente tenemos ataques de enumeración del usuario 10.0.9.6.
 
 Vemos en la prueba13 la verificación de que el sistema ha sido comprometido.
 En este momento, está ejecutando un módulo llamado namedpipe \cite{namedpipe} de un programa llamado meterpreter \cite{meterpreter}
@@ -110,13 +129,13 @@ Además, vemos como se crea una nueva cuenta \cite{4720}, con el nombre ``Slythe
 
 Vemos en el registro log2timeline generado que el proceso iniciado por el script namedpipe ha iniciado como un Servicio de Escritorio Remoto (prueba15) y ha generado nuevas llaves para conectarse y configurar el escritorio remoto de Windows.
 
-En la prueba16, se puede ver como se itenta acceder al sistema de Snape, desde la dirección 10.0.9.6, pero no lo consigue
+En la prueba16, se puede ver como se intenta acceder al sistema de Snape, desde la dirección 10.0.9.6, pero no lo consigue
 
 Vemos en la prueba17 como inicia y cierra sesión con la cuenta de Slytherin.
 
-En la prueba18, vmeos como inicia sesión en la cuenta de Snape y finalmente consigue conectarse mediante RDP al ordenador de Snape desde la dirección IP 10.0.9.6
+En la prueba18, vemos como inicia sesión en la cuenta de Snape y finalmente consigue conectarse mediante \gls{RDP} al ordenador de Snape desde la dirección \gls{IP} 10.0.9.6
 
-Una vez se ha conectado por RDP al sistema, se puede ver (prueba19) como el atacante ha abierto el navegador web Firefox.
+Una vez se ha conectado por \gls{RDP} al sistema, se puede ver (prueba19) como el atacante ha abierto el navegador web Firefox.
 
 Se ve en la prueba20 como el atacante, ha presionado (No ha escrito, esto significa que la página web estaba guardada en el historial de firefox) sobre el enlace de moodle y ha navegado hasta el área personal del usuario conectado en esa cuenta.
 
@@ -124,7 +143,7 @@ En la prueba21 podemos dar por finalizada la sesión de moodle, ya que el usuari
 
 En la prueba22 se puede ver como el usuario cierra sesión en Windows.
 
-En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistema desde la sesión RDP decide apagar el equipo.
+En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistema desde la sesión \gls{RDP} decide apagar el equipo.
 
 \subsubsection{cronograma}
 
@@ -135,18 +154,18 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
 \color{gray}
 \rule{\linewidth}{1pt}
 \ytl{23-10-2019 16:07:38}{Archivo notas pociones.ods añadido al escritorio como acceso rápido}
-\ytl{23-10-2019 16:33:28}{Inicio de escaneo de puertos desde la IP 10.0.9.6}
-\ytl{23-10-2019 16:39:52}{Inicio del ataque bruteforce desde 10.0.9.6 hacia 10.0.9.5}
-\ytl{23-10-2019 16:40:38}{Fin del ataque bruteforce desde 10.0.9.6 hacia 10.0.9.5}
-\ytl{23-10-2019 16:52:30}{Fin de escaneo de puertos desde la IP 10.0.9.6}
+  \ytl{23-10-2019 16:33:28}{Inicio de escaneo de puertos desde la \gls{IP} 10.0.9.6}
+  \ytl{23-10-2019 16:39:52}{Inicio del ataque \gls{bruteforce} desde 10.0.9.6 hacia 10.0.9.5}
+  \ytl{23-10-2019 16:40:38}{Fin del ataque \gls{bruteforce} desde 10.0.9.6 hacia 10.0.9.5}
+  \ytl{23-10-2019 16:52:30}{Fin de escaneo de puertos desde la \gls{IP} 10.0.9.6}
 \ytl{24-10-2019 09:31:31}{Se inicia el cliente de correos electrónicos Thunderbird}
 \ytl{24-10-2019 09:32:14}{Se descarga el archivo tarea.exe}
 \ytl{24-10-2019 09:33:14}{Archivo tarea.exe ha sido ejecutado}
 \ytl{24-10-2019 09:35:38}{El usuario registrado en la cuenta de Snape, ha entrado en Moodle}
 \ytl{24-10-2019 10:06:12}{Se ha iniciado sesión físicamente en la cuenta de snape}
 \ytl{24-10-2019 10:06:40}{Se desancla el archivo NOTAS POCIONES.ods de los accesos rápidos}
-\ytl{24-10-2019 10:07:29}{El usurio accede a Moodle para empezar a poner notas a los alumnos}
-\ytl{24-10-2019 10:09:38}{El usurio acaba de poner notas a los alumnos}
+\ytl{24-10-2019 10:07:29}{El usuario accede a Moodle para empezar a poner notas a los alumnos}
+\ytl{24-10-2019 10:09:38}{El usuario acaba de poner notas a los alumnos}
 \ytl{24-10-2019 10:10:52}{Se ejecuta namedpipe, un programa que permite a atacantes controlar el sistema}
 \ytl{24-10-2019 10:12:54}{Se añade a un usuario a la lista de usuarios administradores \cite{4728}}
 \ytl{24-10-2019 10:12:55}{Se crea y configura la cuenta de Slytherin}
@@ -159,15 +178,15 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
 \centering
 \begin{minipage}[t]{1\linewidth}
 \color{gray}
-\ytl{24-10-2019 10:18:35}{Se inicia el intento de conexión por RDP a la cuenta de Snape}
-\ytl{24-10-2019 10:26:50}{Termina el intento de conexión por RDP a la cuenta de Snape}
+  \ytl{24-10-2019 10:18:35}{Se inicia el intento de conexión por \gls{RDP} a la cuenta de Snape}
+  \ytl{24-10-2019 10:26:50}{Termina el intento de conexión por \gls{RDP} a la cuenta de Snape}
 \ytl{24-10-2019 10:27:4}{Se inicia y cierra sesión a la cuenta de Slytherin}
-\ytl{24-10-2019 10:31:37}{Se coencta 10.0.9.6 por RDP a la cuenta de Snape}
+  \ytl{24-10-2019 10:31:37}{Se conecta 10.0.9.6 por \gls{RDP} a la cuenta de Snape}
 \ytl{24-10-2019 10:31:41}{Se inicia el navegador Firefox}
 \ytl{24-10-2019 10:31:50}{Se abre la página web del moodle además, se navega al área personal del usuario con la sesión iniciada anteriormente en la página y se procede a cambiar las notas. Sesión que sigue hasta el logout de la plataforma}
 \ytl{24-10-2019 10:46:33}{Se cierra sesión (logout) de la página web de moodle}
 \ytl{24-10-2019 10:46:38}{Se cierra sesión en Windows}
-\ytl{24-10-2019 10:47:53}{Se apaga el equipo desde la sesión restante RDP}
+  \ytl{24-10-2019 10:47:53}{Se apaga el equipo desde la sesión restante \gls{RDP}}
 \bigskip
 \rule{\linewidth}{1pt}%
 \end{minipage}%
@@ -182,8 +201,18 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
     \end{itemize}}
   \item{\textbf{Prueba01-1}: 
     \begin{itemize}
-      \item{Prueba del escaneo de puertos con el programa nmap desde la dirección IP 10.0.9.6}
+      \item{Prueba del escaneo de puertos con el programa nmap desde la dirección \gls{IP} 10.0.9.6}
       \item{Hash}: a516a7ab2c9c61d9a6c73ca1ad526db752\\2642c6a3e30c2ad28f52c5b8495ab9
+    \end{itemize}}
+  \item{\textbf{Prueba01-2}: 
+    \begin{itemize}
+      \item{Extracto del archivo de registro de url's generado por bulk\_extractor que describe una cantidad de tráfico generado automáticamente hacia el ordenador del Profesor Snape}
+      \item{Hash}: 8ac81c53177062a08b6a2e7ef036361305\\34d37eaa6d82566381c0cac431de2a
+    \end{itemize}}
+  \item{\textbf{Prueba01-3}: 
+    \begin{itemize}
+      \item{Extracto del archivo generado por bulk\_extractor que respalda las pruebas anteriores. Además, muestra las URL's pedidas por el atacante.}
+      \item{Hash}: 8315cb67630eb14383609f22535edfeaa0\\e3568e733157100d4a61e2ce36b4a7
     \end{itemize}}
   \item{\textbf{Prueba02}: 
     \begin{itemize}
@@ -192,7 +221,7 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
     \end{itemize}}
   \item{\textbf{Prueba03}: 
     \begin{itemize}
-      \item{Prueba de la configuración de puerto del protocolo RDP de Windows}
+      \item{Prueba de la configuración de puerto del protocolo \gls{RDP} de Windows}
       \item{Hash}: 02859e64b9b51a88248548ca8a434e5f3f\\97a46ad9cd859d1af0f797b4d0a089
     \end{itemize}}
   \item{\textbf{Prueba04}: 
@@ -257,7 +286,7 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
     \end{itemize}}
   \item{\textbf{Prueba16}: 
     \begin{itemize}
-      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se intenta acceder por RDP a la cuenta de Snape. El proceso muestra como se está canbiando de puerto constántemente, para adivinar cual es el puerto usado}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se intenta acceder por \gls{RDP} a la cuenta de Snape. El proceso muestra como se está canbiando de puerto constántemente, para adivinar cual es el puerto usado}
       \item{Hash}: 52ae3dd9ac5d8335eb214d771d671c85d1\\780eca0b8f8df0bce7fe8e151235c7
     \end{itemize}}
   \item{\textbf{Prueba17}: 
@@ -267,13 +296,13 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
     \end{itemize}}
   \item{\textbf{Prueba18}: 
     \begin{itemize}
-      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se inicia sesión en la cuenta de Snape y se continúa intentando acceder por RDP. Además aparece la primera configuración de la cuenta}
+      \item{Extracto del archivo generado por log2timeline.py en el que se ve como se inicia sesión en la cuenta de Snape y se continúa intentando acceder por \gls{RDP}. Además aparece la primera configuración de la cuenta}
       \item{Hash}: f8da0fc88eab363fdc1b369d023f5619b\\186576334a36867af4906d093cdcd9c
     \end{itemize}}
   \item{\textbf{Prueba19}: 
     \begin{itemize}
       \item{Extracto del archivo generado por log2timeline.py en el que se ve como se ejecuta el programa Firefox, localizado en los accesos directos del sistema.}
-      \item{Hash}: 5958ba5b7b71bb9ffa1303cc8c7a67725\\9a2afb2c5a3fd6a9b79b3ca99de25a8
+      \item{Hash}: 5958ba5b7b71bb9ffa1303cc8c7a67\\7259a2afb2c5a3fd6a9b79b3ca99de25a8
     \end{itemize}}
   \item{\textbf{Prueba20}: 
     \begin{itemize}
@@ -295,5 +324,25 @@ En la pruaba23 se puede ver el momento en el que el usuario, manejando el sistem
       \item{Extracto del archivo generado por log2timeline.py en el que se ve como el atacante apaga el equipo}
       \item{Hash}: 713fddbe879c7a9171707c0f875f5ab021\\e57308de13d4dac3c2a18525f6acec
     \end{itemize}}
+  \item{\textbf{Prueba24}: 
+    \begin{itemize}
+      \item{Registro de operaciones realizadas con el propósito de analizar forensicamente la prueba proporcionada}
+      \item{Hash}: 2cda571a4c01c41227374b76ad717a3e92\\a6f4f24fc42898db49d6a9f5b02a99
+    \end{itemize}}
 
 \end{itemize}
+
+El procedimiento que se ha llevado a cabo en la revisión y análisis del disco del Profesor Snape, se puede ver en el registro de comandos que se han ejecutado, por orden cronológico. (Prueba24)
+
+\subsubsection{Detalles técnicos}
+
+En la prueba13, vemos como efectivamente se ha ejecutado el siguiente comando:
+\begin{lstlisting}
+cmd.exe /c echo fzfkeq > \\.\pipe\fzfkeq
+\end{lstlisting}
+
+Tras una breve búsqueda en Internet, vemos que es una forma de realizar una estalación de privilegios en sistemas Windwos \cite{meterpreter}.
+Se aprovecha de los nemedpipes \cite{namedpipe} para crear un servidor desde el que el atacante se pueda conectar.
+Al tener tanto entrada como salida de datos, los namedpipe permiten al atacante ejecutar comandos como usuario system.
+Esto funciona porque cuando el usuario en la cuenta de Snape inició el programa tarea.exe, también aceptó los permisos que le solicitó el UAC (Control de cuentas de usuario).
+
